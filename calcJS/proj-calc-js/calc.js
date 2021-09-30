@@ -7,8 +7,8 @@ function calculadora() {
   var result = (alcool/gasol);
   
   if (result <= 0.7){
-    alert("Abasteça com alcool");
+    alert("Abasteça com alcool");    
   } else {
-    alert("Abasteça com gasolina");
+    alert("Abasteça com gasolina");    
   }
 }
