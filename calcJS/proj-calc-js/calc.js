@@ -5,10 +5,14 @@ function calculadora() {
   var alcool = parseFloat(document.getElementById("alcool").value);
   var gasol = parseFloat(document.getElementById("gasol").value);    
   var result = (alcool/gasol);
+
+  var img = document.getElementById("estado");
   
   if (result <= 0.7){
-    alert("Abasteça com alcool");    
+    //alert("Abasteça com alcool");  
+    img.setAttribute("src", "img/imagem2.png");
   } else {
-    alert("Abasteça com gasolina");    
+    //alert("Abasteça com gasolina");    
+    img.setAttribute("src", "img/imagem3.png");
   }
 }
