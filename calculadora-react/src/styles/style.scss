@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+  background-color:rgb(248, 248, 248);
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{  
+  display: grid;
+  position: absolute;
+  width: 275px;
+  height: 530px;
+  left: 300px;
+  top: 50px;
+  background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+  border-radius: 39px;
+}
+
+input[type="text"]{
+  height: 10px;
+  width: 190px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: #17181A;
+  color: white;
+  border-color: #17181A;
+  border-top: #17181A;
+  border-left: #17181A;
+  font-size: 35px;
+}
+
+.botao-limpa-e-apaga{  
+  padding: 6px 4px;
+  background: #616161;
+  border-radius: 16px;
+  color: #A5A5A5;
+}
+
+.botao-azul{
+  background: #005DB2;
+  border-radius: 16px;
+  color: #339DFF;
+}
+
+.botao-resultado{
+  background: #1991FF;
+  border-radius: 12px;
+  color: #B2DAFF;
+  width: 58.6px;
+  height: 60px;
+  left: 21.5px;
+  top: 24px;
+}
+
+#zero{
+  width: 195px;
+}
+
+.botao-restante{
+  background: #303136;
+  border-radius: 16px;
+  color: #29A8FF;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  width: 58.6px;
+  height: 60px;
+  left: 34px;
+  top: 622px;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
