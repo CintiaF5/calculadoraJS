@@ -1,26 +1,33 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-function App() {
-  const [resultado, setResultado] = useState("");
+function App(){
+    const [result, setResult] = useState("");
 
-  const handleClick = (e) => {
-    setResultado(resultado.concat(e.target.name));
-  }
+    const handleClick = (e) => {
+        setResult(result.concat(e.target.name));
+    }
 
-  const clear = () => {
-      setResultado("");
-  }
+    const clear = () => {
+        setResult("");
+    }
+    
+    const calculate = () => {
+        try {
+            setResult(eval(result).toString());
+        } catch(err) {
+            setResult("Error")
+        }        
+    }
 
-  return (    
+    return ( 
     <div className="App">      
       <form>
-        <input type="text" value={resultado}/>
+        <input type="text" value={result}/>
       </form>    
 
       <div>
         <div>
-          <button className="botao-limpa-e-apaga" onClick={clear}>AC</button>
-          <button className="botao-limpa-e-apaga" onClick={clear}>X</button>
+          <button className="botao-limpa" onClick={clear}>C</button>       
           <button className="botao-azul" name = "/" onClick={handleClick}>/</button>
           <button className="botao-azul" name = "*" onClick={handleClick}>*</button>
         </div>
@@ -43,7 +50,7 @@ function App() {
            <button className="botao-restante" name = "1" onClick={handleClick}>1</button>
           <button className="botao-restante" name = "2" onClick={handleClick}>2</button>
           <button className="botao-restante" name = "3" onClick={handleClick}>3</button>  
-          <button className="botao-resultado" name = "=" onClick={handleClick}>=</button>        
+          <button className="botao-resultado" name = "=" onClick={calculate}>=</button>        
         </div>
 
         <div>
